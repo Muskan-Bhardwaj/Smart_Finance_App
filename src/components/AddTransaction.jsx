@@ -48,7 +48,7 @@ const AddTransaction = ({ onAdd }) => {
         style={{ flex: 2, padding: '10px', borderRadius: '6px', border: '1px solid #cbd5e1' }}
       />
       <input 
-        type="number" 
+        type="text" 
         placeholder="Amount" 
         value={amount} 
         onChange={(e) => setAmount(e.target.value)} 
