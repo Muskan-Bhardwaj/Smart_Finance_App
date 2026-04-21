@@ -52,7 +52,12 @@ const AddTransaction = ({ onAdd }) => {
         inputMode="numeric"
         placeholder="Amount" 
         value={amount} 
-        onChange={(e) => setAmount(e.target.value)} 
+        onChange={(e) => {
+          const value = e.target.value;
+          if (/^\d*$/.test(value)) {
+           setAmount(value);
+          }
+          }}
         style={{ flex: 1, padding: '10px', borderRadius: '6px', border: '1px solid #cbd5e1' }}
       />
       <select 
