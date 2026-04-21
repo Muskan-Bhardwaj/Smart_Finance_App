@@ -49,6 +49,7 @@ const AddTransaction = ({ onAdd }) => {
       />
       <input 
         type="text" 
+        inputMode="numeric"
         placeholder="Amount" 
         value={amount} 
         onChange={(e) => setAmount(e.target.value)} 
